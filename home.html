@@ -63,6 +63,60 @@
       <div class="large-3 columns">
         <div class="callout">
           <h4>Búsqueda Avanzada</h4>
+          <form>
+            <div class="row column">
+              <label>Por nombre:
+                <input type="text" name="name">
+              </label>
+            </div>
+            <div class="row column">
+              <label>Por referencia:
+                <input type="text" name="name" aria-describedby="referencia-help">
+              </label>
+              <p class="help-text" id="referencia-help">Número único del producto</p>
+            </div>
+            <div class="row column">
+              <label>Por categoría:
+                <select>
+                  <option>Hogar</option>
+                  <option>Salud</option>
+                  <option>Deporte</option>
+                  <option>Tecnología</option>
+                  <option>Accesorios</option>
+                  <option>Ropa</option>
+                  <option>Mantenimiento</option>
+                </select>
+              </label>
+            </div>
+            <div class="row column">
+              <fieldset>
+                <legend>Tipo de producto:</legend>
+                <input id="nuevo-check" type="checkbox"><label for="checkbox1">Nuevo</label>
+                <input id="usado-check" type="checkbox"><label for="checkbox2">Usado</label>
+              </fieldset>
+            </div>
+            <div class="row column">
+              <fieldset>
+                <legend>Tipo de precio:</legend>
+                <input type="radio" name="tipo-precio" value="Red" id="pleno"><label for="pleno">Pleno</label>
+                <input type="radio" name="tipo-precio" value="Blue" id="en_oferta"><label for="en_oferta">En oferta</label>
+              </fieldset>
+            </div>
+            <div class="row column text-center">
+              <label>¿Buscar productos agotados?</label>
+              <div class="switch medium">
+                <input class="switch-input" id="agotados-switch" type="checkbox">
+                <label class="switch-paddle" for="agotados-switch">
+                  <span class="switch-active" aria-hidden="true">Si</span>
+                  <span class="switch-inactive" aria-hidden="true">No</span>
+                </label>
+              </div>
+            </div>
+            <div class="row column text-center">
+              <hr>
+              <button type="submit" name="enviar" class="button">Buscar <i class="step fi-magnifying-glass"></i></button>
+            </div>
+          </form>
         </div>
       </div>
       <div class="large-9 columns">
